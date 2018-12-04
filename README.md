@@ -19,7 +19,7 @@ and login with the same cerdentials
 
 ## How to use oauth proxy:
 Note: when using oauth make sure your user has permission to browse grafana.
-- add a openshift user htpasswd ```htpasswd -c /etc/origin/master/htpasswd gfadmin```
+- If you DON'T have an existing HTPASSWD file and want to create a new/fresh/deleted/overwritten file to add a openshift user htpasswd ```htpasswd -c /etc/origin/master/htpasswd gfadmin```
 - use the HTPasswdPasswordIdentityProvider as described here - https://docs.openshift.com/enterprise/3.0/admin_guide/configuring_authentication.html 
 - make sure point the provider file to /etc/origin/master/htpasswd.
   or using this example cmd:
